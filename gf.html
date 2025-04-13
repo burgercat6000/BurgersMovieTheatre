@@ -191,27 +191,144 @@
     </div>
 
 <!-- Downloads Page -->
+<style>
+    .downloads-page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .game-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .game-card {
+        background-color: #f9f9f9;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        width: 250px;
+        transition: transform 0.2s ease;
+    }
+
+    .game-card:hover {
+        transform: scale(1.05);
+    }
+
+    .game-card img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+
+    .game-card p {
+        margin: 5px 0;
+    }
+
+    .game-category {
+        font-weight: bold;
+        color: #444;
+        font-size: 1.1em;
+    }
+
+    .game-download a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .game-download a:hover {
+        text-decoration: underline;
+    }
+
+    .fitgirl-text {
+        font-size: 0.85em;
+        color: #555;
+        margin-top: 5px;
+    }
+
+    /* Ensure GTA has rounded edges */
+    .gta-card img {
+        border-radius: 12px;
+    }
+</style>
+
 <div class="downloads-page">
     <h1>Game Downloads</h1>
-    <div class="movie-list">
-        <div>
+
+    <div class="game-container">
+        <div class="game-card">
             <a href="readyornotBMT.torrent"><img src="ron.png" alt="Ready or Not"></a>
-            <p><a href="readyornotBMT.torrent">Download Ready or Not</a></p>
+            <p class="game-category">Tactical Shooter</p>
+            <p class="game-download"><a href="readyornotBMT.torrent">Download Ready or Not</a></p>
         </div>
-        <div>
+
+        <div class="game-card">
             <a href="tlauncherBMT.torrent"><img src="mc.png" alt="TLauncher"></a>
-            <p><a href="tlauncherBMT.torrent">Download TLauncher</a></p>
+            <p class="game-category">Sandbox / Survival</p>
+            <p class="game-download"><a href="tlauncherBMT.torrent">Download TLauncher</a></p>
         </div>
-        <div>
+
+        <div class="game-card">
             <a href="inzoiBMT.torrent"><img src="inzo.png" alt="Inzo"></a>
-            <p><a href="inzoiBMT.torrent">Download Inzo</a></p>
+            <p class="game-category">Life Simulation</p>
+            <p class="game-download"><a href="inzoiBMT.torrent">Download Inzo</a></p>
         </div>
-        <div>
+
+        <div class="game-card">
             <a href="Schedule1BMT.torrent"><img src="sch1.png" alt="Schedule 1"></a>
-            <p><a href="Schedule1BMT.torrent">Download Schedule 1</a></p>
+            <p class="game-category">Strategy / Simulator</p>
+            <p class="game-download"><a href="Schedule1BMT.torrent">Download Schedule 1</a></p>
+        </div>
+
+        <div class="game-card">
+            <a href="theevilwithinBMT.torrent"><img src="tew.png" alt="The Evil Within"></a>
+            <p class="game-category">Horror / Survival</p>
+            <p class="game-download"><a href="theevilwithinBMT.torrent">Download The Evil Within</a></p>
+        </div>
+
+        <div class="game-card">
+            <a href="ts4BMT.torrent"><img src="ts4.png" alt="The Sims 4"></a>
+            <p class="game-category">Life Simulation</p>
+            <p class="game-download"><a href="ts4BMT.torrent">Download The Sims 4</a></p>
+        </div>
+
+        <div class="game-card gta-card">
+            <a href="magnet:?xt=urn:btih:9FB620FFB9CB0D6F68AAA042DF9741D68221BF2D" target="_blank">
+                <img src="gta.png" alt="GTA V">
+            </a>
+            <p class="game-category">Action / Open World</p>
+            <p class="game-download">
+                <a href="magnet:?xt=urn:btih:9FB620FFB9CB0D6F68AAA042DF9741D68221BF2D" target="_blank">
+                    Download GTA V (Magnet)
+                </a>
+            </p>
+            <p class="fitgirl-text">Magnet link from FitGirl</p>
+        </div>
+
+        <div class="game-card">
+            <a href="magnet:?xt=urn:btih:18A89755E51616C9E8E904FF360E364DEB4B0922" target="_blank">
+                <img src="rdr2.png" alt="Red Dead Redemption 2">
+            </a>
+            <p class="game-category">Action / Open World</p>
+            <p class="game-download">
+                <a href="magnet:?xt=urn:btih:18A89755E51616C9E8E904FF360E364DEB4B0922" target="_blank">
+                    Download RDR2 Ultimate Edition (Magnet)
+                </a>
+            </p>
+            <p class="fitgirl-text">Magnet link from FitGirl</p>
         </div>
     </div>
 </div>
+
+
 
 
     <!-- Contact Us Page -->
